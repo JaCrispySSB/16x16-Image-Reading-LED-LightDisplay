@@ -75,7 +75,7 @@ while loops < 10000:
             for j in range(16):  # Loop 16 times
                 newArray = []
                 for i in range(pixelSize):  # Loop for 75 iterations
-                    index = (i * 16) + (h*imgX) + j # Calculate the index to select the item from original_array
+                    index = (i * 16) + (h*imgX) + j # Calculate the index(lowkey hard equation)
                     if index < len(finalRGB):
                         item = finalRGB[index]
                         newArray.append(item)
